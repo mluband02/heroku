@@ -2,8 +2,8 @@ const MongoClient = require('mongodb').MongoClient;
 const uri = "mongodb+srv://userguy:MaxLuband@cluster0.o5isz7h.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 var http = require('http');
 var url = require('url');
-//var port = process.env.PORT || 3000;
-var port = 8080; 
+var port = process.env.PORT || 3000;
+//var port = 8080; 
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
   urlObj = url.parse(req.url,true)
