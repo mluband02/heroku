@@ -18,7 +18,6 @@ http.createServer(function (req, res) {
      "<label for= 'name'>Name</label><br><br>" +
     "<input type='submit' value='Submit'> </form>"
      res.write(s)
-     res.end()
   }
   else if (urlObj.pathname == "/search") {
     MongoClient.connect(uri, async function(err, db) 
