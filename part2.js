@@ -56,6 +56,7 @@ http.createServer(function (req, res) {
               }
             }
             db.close()
+            res.end()
           })
         } 
         else if(urlObj.query.choice == 'ticker')
@@ -86,6 +87,7 @@ http.createServer(function (req, res) {
               }
             }
             db.close()
+            res.end()
           })
         }
         else 
