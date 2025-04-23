@@ -17,6 +17,6 @@
 },
   "homepage": ""
     "dependencies": {
-    "mongodb": "^4.1.0"  // this is the MongoDB package
+    "mongodb": "^4.1.0" 
   }
 }
