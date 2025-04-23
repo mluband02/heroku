@@ -1,5 +1,6 @@
 const MongoClient = require('mongodb').MongoClient;
 const uri = "mongodb+srv://userguy:MaxLuband@cluster0.o5isz7h.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+console.log('test')
 var http = require('http');
 var url = require('url');
 var port = process.env.PORT || 3000;
@@ -24,7 +25,6 @@ http.createServer(function (req, res) {
     MongoClient.connect(uri, async function(err, db) 
     {
         if(err) { return console.log(err); return;}
-        console.log('test')
     
         var dbo = db.db("Stock"); 
         var collection = dbo.collection('PublicCompanies');
